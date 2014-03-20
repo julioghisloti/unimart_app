@@ -1,0 +1,94 @@
+/* Unimart APP -- Home Style */
+
+/* Import */
+@import "base.scss";
+
+/* Comp */
+.space{
+	display: block;
+	height: 328px;
+	position: relative;
+}
+
+.top{position: fixed;}
+.footer{position: fixed;}
+.content{height: 100%;}
+
+/* Lojas All */
+.lojas-all{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+	position: relative;
+	width: 760px;
+
+	/* LOJAS TITLE */
+	.lojas-title{
+		background-color: $verde2;
+		color: #fff;
+		font-family: 'dinprolight';
+		left: 50%;
+		margin-left: -205px;
+		padding: 25px;
+		position: absolute;
+		text-align: center;
+		width: 360px;
+		z-index: 9998;
+
+		@include border-radius(30px);
+
+		h1{
+			font-size: 43px;
+		}
+
+	}
+
+	/* LOJAS CONTENT */
+	.lojas-content{
+		background: url("../../lib/img/bot_bg.png");
+		display: table;
+		margin-bottom: 80px;
+		padding: 20px;
+		padding-top: 55px;
+		position: relative;
+		top: 40px;
+		width: 730px;
+
+		@include border-radius(20px);
+
+		/* LOJA */
+		.loja{
+			display: inline-block;
+			font-family: 'dinprolight';
+			font-size: 25px;
+			margin: 20px;
+			position: relative;
+			width: 202px;
+		}
+
+	}
+
+	/* VOLTAR */
+	.voltar{
+		background-color: $amarelo;
+		border: 1px solid $amarelo;
+		color: #fff;
+		font-family: 'dinprolight';
+		font-size: 35px;
+		padding: 15px;
+		right: 0;
+		text-decoration: none;
+
+		@include border-radius(10px);
+		@include transition-property(all);
+		@include transition-duration(.3s);
+		@include transition-timing-function(ease-in);
+	}
+
+	.voltar:hover{
+		background-color: #fff;
+		color: $amarelo;
+	}
+
+
+}

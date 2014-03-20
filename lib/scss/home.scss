@@ -1,0 +1,83 @@
+/* Unimart APP -- Home Style */
+
+/* Import */
+@import "base.scss";
+
+/* Incons */
+.icons{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+	position: relative;
+	width: 600px;
+}
+
+.ver_todos-icon{
+	width: 418px !important;
+}
+
+.icon_block{
+	display: inline-block;
+	margin: 0px 11px 11px 11px;
+	position: relative;
+	width: 125px;
+
+	@include scale(1);
+	@include transition-property(all);
+	@include transition-duration(.1s);
+	@include transition-timing-function(ease-in);
+
+	h2{
+		color: #fff;
+		font-family: 'dinprolight';
+		font-size: 17px;		
+		text-align: center;
+	}
+
+	.icon{
+		background: url("../img/sprite.png");
+		display: block;
+		height: 125px;
+		margin-bottom: 10px;
+		width: 125px;
+	}
+
+	/* Icones */
+	.acessorios{background-position: -6px -5px;}
+	.alimentacao{background-position: -153px -5px;}
+	.diversos{background-position: -302px -5px;}
+	.lar{background-position: -453px -5px;}
+
+	.esportivos{background-position: -6px -154px;}
+	.brinquedos{background-position: -153px -154px;}
+	.cafeteria{background-position: -302px -154px;}
+	.calcados_femininos{background-position: -453px -154px;}
+	
+	.calcados_esportivos{background-position: -6px -305px;}
+	.calcados_geral{background-position: -153px -305px;}
+	.chocolateria{background-position: -302px -305px;}
+	.lazer{background-position: -453px -305px;}
+
+	.moda_feminina{background-position: -6px -456px;}
+	.livraria{background-position: -153px -456px;}
+	.joalheria{background-position: -302px -456px;}
+	.moda_masculina{background-position: -453px -455px;}
+
+	.moda_geral{background-position: -6px -610px;}
+	.moda_jovem{background-position: -153px -610px;}
+	.moda_intima{background-position: -302px -610px;}
+	.moda_praia{background-position: -453px -610px;}
+
+	.servicos{background-position: -6px -760px;}
+	.telefonia{background-position: -153px -760px;}
+	.oticas{background-position: -302px -760px;}
+	.perfumaria{background-position: -453px -760px;}
+
+	.ver_todos{background-position: -6px -914px;}
+	.suplementos{background-position: -453px -914px;}
+}
+
+.icon_block:hover{
+	cursor: pointer;
+	@include scale(1.1);
+}

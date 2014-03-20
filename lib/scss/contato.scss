@@ -1,0 +1,142 @@
+/* Unimart APP -- Home Style */
+
+/* Import */
+@import "base.scss";
+
+/* Comp */
+.space{
+	display: block;
+	height: 328px;
+	position: relative;
+}
+
+.top{position: fixed;}
+.footer{position: fixed;}
+.content{height: 100%;}
+
+/* Lojas All */
+.contato-all{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+	position: relative;
+	width: 760px;
+
+	/* CONTATO TITLE */
+	.contato-title{
+		background-color: $verde2;
+		color: #fff;
+		font-family: 'dinprolight';
+		left: 50%;
+		margin-left: -205px;
+		padding: 25px;
+		position: absolute;
+		text-align: center;
+		width: 360px;
+		z-index: 9998;
+
+		@include border-radius(30px);
+
+		h1{
+			font-size: 43px;
+		}
+
+	}
+
+	/* CONTATO CONTENT */
+	.contato-content{
+		background: url("../../lib/img/bot_bg.png");
+		display: table;
+		margin-bottom: 80px;
+		padding: 20px;
+		padding-top: 55px;
+		position: relative;
+		top: 40px;
+		width: 730px;
+
+		@include border-radius(20px);
+
+		.input{
+			border: 1px solid #ccc;
+			outline: none;
+			font-family: 'dinpromedium';
+			font-size: 30px;
+			height: 42px;
+			margin-bottom: 28px;
+			padding: 5px;
+			width: 715px;
+
+			@include border-radius(10px);
+			@include box-shadow(#ccc 2px 2px 5px);
+			@include border-radius(10px);
+			@include transition-property(all);
+			@include transition-duration(.3s);
+			@include transition-timing-function(ease-in);
+		}
+
+		.input:focus{
+	
+			border: 1px solid $verde;
+			@include box-shadow($verde 0px 0px 20px);
+
+		}
+
+		label{
+			display: block;
+			font-family: 'dinprolight';
+			font-size: 30px;
+			margin-bottom: 10px;
+			position: relative;
+			width: 100%;
+		}
+
+		.texto{height: 250px !important;}
+
+		.enviar{
+			background-color: $amarelo;
+			border: 1px solid $amarelo;
+			color: #fff;
+			font-family: 'dinpromedium';
+			font-size: 30px;
+			margin-right: 10px;
+			padding: 10px;
+			text-decoration: none;
+			width: 100%;
+
+			@include border-radius(10px);
+			@include transition-property(all);
+			@include transition-duration(.3s);
+			@include transition-timing-function(ease-in);
+		}
+
+		.enviar:hover{
+			background-color: $verde;
+			border: 1px solid $verde2;
+			cursor: pointer;
+		}
+	}
+
+	/* VOLTAR */
+	.voltar{
+		background-color: $amarelo;
+		border: 1px solid $amarelo;
+		color: #fff;
+		font-family: 'dinprolight';
+		font-size: 35px;
+		padding: 15px;
+		right: 0;
+		text-decoration: none;
+
+		@include border-radius(10px);
+		@include transition-property(all);
+		@include transition-duration(.3s);
+		@include transition-timing-function(ease-in);
+	}
+
+	.voltar:hover{
+		background-color: #fff;
+		color: $amarelo;
+	}
+
+
+}

@@ -1,0 +1,422 @@
+/* Unimart APP -- Home Style */
+/* Import */
+/* Unimart APP -- Base Style */
+/* Import */
+/* line 17, ../../../../../../../../Users/julio/.rvm/gems/ruby-1.9.3-p392/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../../Users/julio/.rvm/gems/ruby-1.9.3-p392/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../../Users/julio/.rvm/gems/ruby-1.9.3-p392/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../../Users/julio/.rvm/gems/ruby-1.9.3-p392/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../../Users/julio/.rvm/gems/ruby-1.9.3-p392/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../../Users/julio/.rvm/gems/ruby-1.9.3-p392/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../../Users/julio/.rvm/gems/ruby-1.9.3-p392/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../../Users/julio/.rvm/gems/ruby-1.9.3-p392/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../../Users/julio/.rvm/gems/ruby-1.9.3-p392/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* Cores */
+/* Fontes */
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+  font-family: 'dinprolight';
+  src: url("../font/dinpro_light-webfont.eot");
+  src: url("../font/dinpro_light-webfont.eot?#iefix") format("embedded-opentype"), url("../font/dinpro_light-webfont.woff") format("woff"), url("../font/dinpro_light-webfont.ttf") format("truetype"), url("../font/dinpro_light-webfont.svg#dinprolight") format("svg");
+}
+
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+  font-family: 'dinpromedium';
+  src: url("../font/dinpro_medium-webfont.eot");
+  src: url("../font/dinpro_medium-webfont.eot?#iefix") format("embedded-opentype"), url("../font/dinpro_medium-webfont.woff") format("woff"), url("../font/dinpro_medium-webfont.ttf") format("truetype"), url("../font/dinpro_medium-webfont.svg#dinpromedium") format("svg");
+}
+
+/* Comp */
+/* line 39, ../scss/base.scss */
+body {
+  background: url("../img/sprite.png") -593px no-repeat;
+  background-attachment: fixed;
+}
+
+/* Content */
+/* line 45, ../scss/base.scss */
+.content {
+  position: relative;
+  display: table;
+  padding: 0 5px 5px 5px;
+  width: 800px;
+  height: 1850px;
+}
+
+/* Top */
+/* line 54, ../scss/base.scss */
+.top {
+  background: url("../img/bot_bg.png") repeat;
+  height: 308px;
+  position: relative;
+  width: 798px;
+  z-index: 9999;
+  -webkit-border-radius: 0px 0px 50px 50px;
+  -moz-border-radius: 0px 0px 50px 50px;
+  -ms-border-radius: 0px 0px 50px 50px;
+  -o-border-radius: 0px 0px 50px 50px;
+  border-radius: 0px 0px 50px 50px;
+  -webkit-box-shadow: black 0px 0px 20px;
+  -moz-box-shadow: black 0px 0px 20px;
+  box-shadow: black 0px 0px 20px;
+  /* Vitrine logo */
+  /* Unimart logo */
+}
+/* line 65, ../scss/base.scss */
+.top .vitrine_logo {
+  left: 27px;
+  position: absolute;
+  top: 10px;
+}
+/* line 72, ../scss/base.scss */
+.top .unimart_logo {
+  position: absolute;
+  right: 75px;
+  top: 52px;
+}
+
+/* Footer */
+/* line 81, ../scss/base.scss */
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 800px;
+  height: 160px;
+  background: url("../img/bot_bg.png") repeat;
+  z-index: 9999;
+  -webkit-border-radius: 50px 50px 0px 0px;
+  -moz-border-radius: 50px 50px 0px 0px;
+  -ms-border-radius: 50px 50px 0px 0px;
+  -o-border-radius: 50px 50px 0px 0px;
+  border-radius: 50px 50px 0px 0px;
+  -webkit-box-shadow: black 0px 0px 20px;
+  -moz-box-shadow: black 0px 0px 20px;
+  box-shadow: black 0px 0px 20px;
+  /* Bts */
+}
+/* line 93, ../scss/base.scss */
+.footer .footer_content {
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 30px;
+  position: relative;
+  width: 378px;
+}
+/* line 100, ../scss/base.scss */
+.footer .footer_content a {
+  background-color: #4db848;
+  border: 1px solid #4db848;
+  color: #fff;
+  font-family: 'dinpromedium';
+  font-size: 30px;
+  margin-right: 10px;
+  padding: 10px;
+  text-decoration: none;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-in;
+  -moz-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+/* line 116, ../scss/base.scss */
+.footer .footer_content a:hover {
+  background-color: #fff;
+  border: 1px solid #4db848;
+  color: #4db848;
+}
+/* line 122, ../scss/base.scss */
+.footer .footer_content input[type="text"] {
+  border: 1px solid #ccc;
+  outline: none;
+  font-family: 'dinpromedium';
+  font-size: 30px;
+  height: 42px;
+  margin-top: 28px;
+  padding: 5px;
+  width: 355px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: #cccccc 2px 2px 5px;
+  -moz-box-shadow: #cccccc 2px 2px 5px;
+  box-shadow: #cccccc 2px 2px 5px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-in;
+  -moz-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+/* line 140, ../scss/base.scss */
+.footer .footer_content input[type="text"]:focus {
+  border: 1px solid #4db848;
+  -webkit-box-shadow: #4db848 0px 0px 20px;
+  -moz-box-shadow: #4db848 0px 0px 20px;
+  box-shadow: #4db848 0px 0px 20px;
+}
+/* line 147, ../scss/base.scss */
+.footer .footer_content button {
+  background-color: #fff;
+  border: 0;
+  position: absolute;
+  right: 20px;
+  top: 68px;
+}
+/* line 155, ../scss/base.scss */
+.footer .footer_content button:hover {
+  cursor: pointer;
+}
+
+/* Incons */
+/* line 7, ../scss/home.scss */
+.icons {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  position: relative;
+  width: 600px;
+}
+
+/* line 15, ../scss/home.scss */
+.ver_todos-icon {
+  width: 418px !important;
+}
+
+/* line 19, ../scss/home.scss */
+.icon_block {
+  display: inline-block;
+  margin: 0px 11px 11px 11px;
+  position: relative;
+  width: 125px;
+  -webkit-transform: scale(1, 1);
+  -moz-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  -o-transform: scale(1, 1);
+  transform: scale(1, 1);
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.1s;
+  -moz-transition-duration: 0.1s;
+  -o-transition-duration: 0.1s;
+  transition-duration: 0.1s;
+  -webkit-transition-timing-function: ease-in;
+  -moz-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+  /* Icones */
+}
+/* line 30, ../scss/home.scss */
+.icon_block h2 {
+  color: #fff;
+  font-family: 'dinprolight';
+  font-size: 17px;
+  text-align: center;
+}
+/* line 37, ../scss/home.scss */
+.icon_block .icon {
+  background: url("../img/sprite.png");
+  display: block;
+  height: 125px;
+  margin-bottom: 10px;
+  width: 125px;
+}
+/* line 46, ../scss/home.scss */
+.icon_block .acessorios {
+  background-position: -6px -5px;
+}
+/* line 47, ../scss/home.scss */
+.icon_block .alimentacao {
+  background-position: -153px -5px;
+}
+/* line 48, ../scss/home.scss */
+.icon_block .diversos {
+  background-position: -302px -5px;
+}
+/* line 49, ../scss/home.scss */
+.icon_block .lar {
+  background-position: -453px -5px;
+}
+/* line 51, ../scss/home.scss */
+.icon_block .esportivos {
+  background-position: -6px -154px;
+}
+/* line 52, ../scss/home.scss */
+.icon_block .brinquedos {
+  background-position: -153px -154px;
+}
+/* line 53, ../scss/home.scss */
+.icon_block .cafeteria {
+  background-position: -302px -154px;
+}
+/* line 54, ../scss/home.scss */
+.icon_block .calcados_femininos {
+  background-position: -453px -154px;
+}
+/* line 56, ../scss/home.scss */
+.icon_block .calcados_esportivos {
+  background-position: -6px -305px;
+}
+/* line 57, ../scss/home.scss */
+.icon_block .calcados_geral {
+  background-position: -153px -305px;
+}
+/* line 58, ../scss/home.scss */
+.icon_block .chocolateria {
+  background-position: -302px -305px;
+}
+/* line 59, ../scss/home.scss */
+.icon_block .lazer {
+  background-position: -453px -305px;
+}
+/* line 61, ../scss/home.scss */
+.icon_block .moda_feminina {
+  background-position: -6px -456px;
+}
+/* line 62, ../scss/home.scss */
+.icon_block .livraria {
+  background-position: -153px -456px;
+}
+/* line 63, ../scss/home.scss */
+.icon_block .joalheria {
+  background-position: -302px -456px;
+}
+/* line 64, ../scss/home.scss */
+.icon_block .moda_masculina {
+  background-position: -453px -455px;
+}
+/* line 66, ../scss/home.scss */
+.icon_block .moda_geral {
+  background-position: -6px -610px;
+}
+/* line 67, ../scss/home.scss */
+.icon_block .moda_jovem {
+  background-position: -153px -610px;
+}
+/* line 68, ../scss/home.scss */
+.icon_block .moda_intima {
+  background-position: -302px -610px;
+}
+/* line 69, ../scss/home.scss */
+.icon_block .moda_praia {
+  background-position: -453px -610px;
+}
+/* line 71, ../scss/home.scss */
+.icon_block .servicos {
+  background-position: -6px -760px;
+}
+/* line 72, ../scss/home.scss */
+.icon_block .telefonia {
+  background-position: -153px -760px;
+}
+/* line 73, ../scss/home.scss */
+.icon_block .oticas {
+  background-position: -302px -760px;
+}
+/* line 74, ../scss/home.scss */
+.icon_block .perfumaria {
+  background-position: -453px -760px;
+}
+/* line 76, ../scss/home.scss */
+.icon_block .ver_todos {
+  background-position: -6px -914px;
+}
+/* line 77, ../scss/home.scss */
+.icon_block .suplementos {
+  background-position: -453px -914px;
+}
+
+/* line 80, ../scss/home.scss */
+.icon_block:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.1, 1.1);
+  -moz-transform: scale(1.1, 1.1);
+  -ms-transform: scale(1.1, 1.1);
+  -o-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
+}

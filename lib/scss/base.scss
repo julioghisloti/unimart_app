@@ -1,0 +1,159 @@
+/* Unimart APP -- Base Style */
+
+/* Import */
+@import "compass/reset";
+@import "compass/css3";
+
+/* Cores */
+$verde: #4db848;
+$verde2: #A2CE54;
+$amarelo: #F7B847;
+$rosa: #FF4FA2;
+
+/* Fontes */
+@font-face {
+    font-weight: normal;
+    font-style: normal;
+    font-family: 'dinprolight';
+    src: url('../font/dinpro_light-webfont.eot');
+    src: url('../font/dinpro_light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/dinpro_light-webfont.woff') format('woff'),
+         url('../font/dinpro_light-webfont.ttf') format('truetype'),
+         url('../font/dinpro_light-webfont.svg#dinprolight') format('svg');
+
+} 
+
+@font-face {
+    font-weight: normal;
+    font-style: normal;
+    font-family: 'dinpromedium';
+    src: url('../font/dinpro_medium-webfont.eot');
+    src: url('../font/dinpro_medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/dinpro_medium-webfont.woff') format('woff'),
+         url('../font/dinpro_medium-webfont.ttf') format('truetype'),
+         url('../font/dinpro_medium-webfont.svg#dinpromedium') format('svg');
+
+}
+
+/* Comp */
+body{
+	background: url("../img/sprite.png") -593px no-repeat; 
+	background-attachment: fixed;
+}
+
+/* Content */
+.content{
+	position: relative;
+	display: table;
+	padding: 0 5px 5px 5px;
+	width: 800px;
+	height: 1850px;
+}
+
+/* Top */
+.top{
+	background: url("../img/bot_bg.png") repeat;
+	height: 308px;	
+	position: relative;
+	width: 798px;
+	z-index: 9999;
+
+	@include border-radius(0px 0px 50px 50px);
+	@include box-shadow(#000 0px 0px 20px);
+
+	/* Vitrine logo */
+	.vitrine_logo{
+		left: 27px;
+		position: absolute;
+		top: 10px;
+	}
+
+	/* Unimart logo */
+	.unimart_logo{
+		position: absolute;
+		right: 75px;
+		top: 52px;
+	}
+
+}
+
+/* Footer */
+.footer{
+	position: absolute;
+	bottom: 0;
+	width: 800px;
+	height: 160px;
+	background: url("../img/bot_bg.png") repeat;
+	z-index: 9999;
+
+	@include border-radius(50px 50px 0px 0px);
+	@include box-shadow(#000 0px 0px 20px);
+
+	/* Bts */
+	.footer_content{
+		margin-right: auto;
+		margin-left: auto;
+		margin-top: 30px;
+		position: relative;
+		width: 378px;
+
+		a{
+			background-color: $verde;
+			border: 1px solid $verde;
+			color: #fff;
+			font-family: 'dinpromedium';
+			font-size: 30px;
+			margin-right: 10px;
+			padding: 10px;
+			text-decoration: none;
+
+			@include border-radius(10px);
+			@include transition-property(all);
+			@include transition-duration(.3s);
+			@include transition-timing-function(ease-in);
+		}
+
+		a:hover{
+		 	background-color: #fff;
+		 	border: 1px solid $verde;
+		 	color: $verde;
+		}
+
+		input[type="text"]{
+			border: 1px solid #ccc;
+			outline: none;
+			font-family: 'dinpromedium';
+			font-size: 30px;
+			height: 42px;
+			margin-top: 28px;
+			padding: 5px;
+			width: 355px;
+
+			@include border-radius(10px);
+			@include box-shadow(#ccc 2px 2px 5px);
+			@include border-radius(10px);
+			@include transition-property(all);
+			@include transition-duration(.3s);
+			@include transition-timing-function(ease-in);
+		}
+
+		input[type="text"]:focus{
+	
+			border: 1px solid $verde;
+			@include box-shadow($verde 0px 0px 20px);
+
+		}
+
+		button{
+			background-color: #fff;
+			border: 0;
+			position: absolute;
+			right: 20px;
+			top: 68px;		
+		}
+
+		button:hover{cursor: pointer;}
+
+	}
+
+}

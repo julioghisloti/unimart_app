@@ -1,0 +1,113 @@
+/* Unimart APP -- Home Style */
+
+/* Import */
+@import "base.scss";
+
+/* Comp */
+.space{
+	display: block;
+	height: 328px;
+	position: relative;
+}
+
+.top{position: fixed;}
+.footer{position: fixed;}
+.content{height: 100%;}
+
+/* Destaque */
+.destaque{
+	background: url("../../lib/img/bot_bg.png") repeat;
+	height: 180px;
+	margin-bottom: 30px;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 10px;
+	position: relative;
+	width: 760px;
+
+	@include border-radius(30px);
+
+	/* Foto */
+	.foto{position: absolute;}
+
+	/* Loja */
+	.bio{
+		font-family: 'dinpromedium';
+		position: absolute;
+		left: 290px;
+		top: 50px;
+
+		h1{
+			color: $verde;
+			font-size: 30px;
+			margin-bottom: 10px;
+		}
+
+		h2{
+			color: #999;
+			font-size: 20px;
+			margin-bottom: 10px;
+		}
+
+		h3{
+				color: #999;
+			font-size: 17px;
+			margin-bottom: 10px;
+		}
+
+
+	}
+
+	/* SHARE */
+	.share{
+		background: url("../../lib/img/sprite.png") no-repeat;
+		background-position: -37px -1046px;
+		display: block;
+		height: 47px;
+		position: absolute;
+		right: 40px;
+		top: 30px;
+		width: 64px;
+	}
+
+	/* AVALIAR */
+	.avaliar{
+		background-color: #999;
+		height: 34px;
+		position: absolute;
+		right: 40px;
+		top: 130px;
+		width: 190px;
+		z-index: 9997;
+		
+		/* coracao */
+		.coracoes{
+			height: 35px;
+			position: relative;
+			width: 190px;
+			z-index: 9999;
+
+			.coracao{
+				background: url("../../lib/img/coracao.png"); 
+				display: inline-block;
+				height: 35px;
+				margin-right: -5px;
+				position: relative;
+				width: 39px;
+			}
+
+		}
+
+		/* satus */
+		.status{
+			background-color: $rosa;
+			height: 34px;
+			position: absolute;
+			top: 0;
+			z-index: 9998;
+		}
+
+	}
+
+
+}
